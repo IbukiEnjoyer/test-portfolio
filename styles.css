@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: white;
+    font-family: "Noto Sans", sans-srif;
+}
+
+.spaced {
+    letter-spacing: 40px;
+    padding-top: 20px;
+    font-style: italic;
+    font-weight: 200;
+}
+
+.little-spaced {
+    letter-spacing: 10px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.navbar-container {
+    background-color: rgb(59, 71, 136);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+}
+
+a {
+    text-decoration: none;
+    color: white
+}
+
+a:hover {
+    color: rgb(168, 164, 180);
+}
+ul {
+    font-size: 20px;
+    display: flex;
+    gap: 100px;
+    padding: 20px;
+    list-style-type: none;
+}
+
+#welcome-section {
+    background-color: rgba(58, 55, 66, 0.151);
+    /* 
+    SOURCE 
+    https://www.freepik.com/free-ai-image/beautiful-anime-landscape-cartoon-scene_94945004.htm#fromView=keyword&page=1&position=0&uuid=9c44026b-0063-456f-bccc-0e793b99b5f1&query=Anime+Village+Wallpaper 
+    */
+    background-image: url(images/welcomebackground.jpg);
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+}
+
+.welcome h1 {
+    font-size: 100px;
+    font-weight: 800;
+    text-shadow: rgb(170, 170, 247) 1px 0 10px;
+}
+
+.welcome p {
+    font-size: 30px;
+}
+
+.welcome div {
+    font-size: 50px;
+}
+
+#projects {
+    width: 100%;
+    height: 500px;
+    padding-top: 20px;
+    background-color: rgb(45, 59, 141);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.project-tile {
+    width: 150px;
+    height: 150px;
+    font-size: 0.7rem;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-container {
+    padding-top: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.projects-section {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 50px;
+}
+
+#me {
+    width: 100%;
+    height: 100vh;
+    font-size: 30px;
+    padding-bottom: 20px;
+    background-color: rgb(70, 43, 226);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts {
+    padding-top: 100px;
+}
+
+@media all and (max-width: 700px) {
+    .welcome h1,
+    .welcome p,
+    .welcome div {
+        font-size: 2rem
+    }
+
+    #me {
+        font-size: 20px;
+    }
+}
